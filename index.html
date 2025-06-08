@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIZINマッチングアプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>RIZIN ファイターマッチング</h1>
+        </header>
+        
+        <div class="card-container">
+            <div class="card" id="fighter-card">
+                <div class="card-image">
+                    <img src="" alt="Fighter" id="fighter-image">
+                </div>
+                <div class="card-info">
+                    <h2 id="fighter-name"></h2>
+                    <p id="fighter-weight"></p>
+                    <p id="fighter-record"></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="action-buttons">
+            <button class="btn dislike" id="dislike-btn">✕</button>
+            <button class="btn like" id="like-btn">♥</button>
+        </div>
+        
+        <div class="match-notification" id="match-notification" style="display: none;">
+            <div class="match-content">
+                <h3>マッチ成立！</h3>
+                <p>このファイターを応援しよう！</p>
+                <button id="continue-btn">続ける</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
